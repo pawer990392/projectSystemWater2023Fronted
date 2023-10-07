@@ -1,0 +1,47 @@
+<section class="sessionStyle vh-100">
+    <div class="w-auto p-3" style="background-color: #087cca;"></div>
+    <div class="container-fluid h-custom"> 
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5 mt-3 mb-3">
+          <img src="../../../../assets/img/logoCobro.png"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form (formGroup)="myForm" (ngSubmit)="loguearSystem()"> 
+               
+            <div class="text-center">
+                <img src="../../../../assets/img/candado.jpg"
+                  style="width: 180px;" alt="logo">
+              </div>
+  
+            <div class="divider d-flex align-items-center my-4 ">
+              <p class="text-center fw-bold mx-3 mb-0 "><span class="textStyle">Iniciar Sesion</span></p>
+            </div>
+  
+            <!-- user input -->
+            <div class="form-outline mb-4">
+             <label class="form-label" for="loginUser">Usuario:</label>
+              <input type="text" id="loginUser" formControlName="loginUser" required class="form-control form-control-lg"
+                placeholder="Ingrese Usuario" />
+             
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="loginPassword">Contraseña:</label>
+              <input type="password" id="loginPassword" formControlName="loginPassword" required class="form-control form-control-lg"
+                placeholder="Ingrese Contraseña" /> 
+            </div>
+  
+            <div class="d-grid gap-2 mt-3">
+                <button class="gradient-custom-2 btn btn-primary p-3" type="submit">Acceder</button>
+              </div>
+          </form>
+          
+        </div>
+        
+      </div>
+     
+    </div>
+    
+  </section>

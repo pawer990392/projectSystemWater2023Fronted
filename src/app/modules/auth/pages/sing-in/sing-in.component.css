@@ -1,0 +1,43 @@
+.title-session{
+    text-align: center;
+    font-weight: bolder;
+    font-variant: normal;
+}
+.login-heading{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    
+}
+.Icon-user{
+    margin-top: 10px;
+    margin-bottom:10px; 
+    color: #FFF;
+    font-size: 50px;
+    text-align: center;
+}
+  
+  .bg-image {
+    background-image: url('../../../../../assets/img/logoWater.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  .login-heading {
+    font-weight: 300;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+  .contenedor{
+    background: rgb(46,40,153);
+    background: linear-gradient(90deg, rgba(46,40,153,1) 0%, rgba(9,9,121,1) 31%, rgba(0,212,255,1) 100%);
+    padding-left: 4%;
+    padding-right: 4%;
+  }

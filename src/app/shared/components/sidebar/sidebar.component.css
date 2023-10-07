@@ -1,0 +1,56 @@
+.logo{
+  align-content: center;
+  text-align: center;
+}
+.styleDivide{
+  background-color:white;
+  border-top-width: 0.2rem;
+}
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  padding-left: 2rem;
+}
+.menu-button:hover{
+  background-color: rgb(0, 103, 193);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  text-decoration: none;
+
+}
+.avatar {
+  margin-top: 12px;
+  width: 120px;
+  height: 60px;
+  align-content: center;
+}
+.menu a mat-icon{
+  margin-right: 0.7rem;
+}
+
+.name {
+  margin-top: 5px;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+}
+.styleTittle{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+.icon-display{
+  transform: scale(1);
+}
+.title-icon{
+  text-align: center;
+  align-content: center;
+}
+
+
+
+

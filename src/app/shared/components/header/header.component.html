@@ -1,0 +1,25 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleSidebar()">
+            <mat-icon class="mat-3">menu</mat-icon>
+        </button>
+        <span class=""></span>
+        <span class="example-spacer"></span>
+        <button mat-button class="user mt-2 d-flex align-items-center dropdown-toggle" [matMenuTriggerFor]="dropDown" role="button" data-toogle="dropDown" aria-haspopup="true" aria-expanded="false">
+          <img src="../../../../assets/img/profile.png" alt="" class="user-imagen mr-1 p-3">
+          Angel2023
+        </button>
+          <mat-menu class="mat-menu2" #dropDown="matMenu" overlapTrigger="false">
+            <button mat-menu-item>
+              <mat-icon>settings</mat-icon>
+              <span>Perfil</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>logout</mat-icon>
+              <span>Salir</span>
+            </button>
+          </mat-menu>
+
+
+    </mat-toolbar-row>
+</mat-toolbar>

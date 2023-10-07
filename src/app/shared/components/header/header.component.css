@@ -1,0 +1,36 @@
+mat-toolbar{
+    position:sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    
+}
+button{
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.user{
+    font-size: 12px;
+}
+.user-imagen{
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+}
+.example-icon { 
+padding: 0 70px; 
+} 
+.example-spacer { 
+flex: 1 1 auto; 
+} 
+
+.title-center { 
+margin: 0 auto; 
+color: white; 
+} 
+.mat-menu2{
+background-color: aquamarine;
+}
+
+
