@@ -29,6 +29,11 @@ const routes: Routes = [
     path:'toma',
     component:PrivateComponent,
     loadChildren:()=>import('../modules/toma/toma.module').then(m=>m.TomaModule)
+  },
+  {
+    path:'servicio',
+    component:PrivateComponent,
+    loadChildren:() =>import('../modules/services/services.module').then(m=>m.ServicesModule)
   }
 ];
 
