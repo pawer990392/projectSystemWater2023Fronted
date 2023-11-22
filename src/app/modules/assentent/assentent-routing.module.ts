@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AsssetentLayoutComponent } from './layout/asssetent-layout/asssetent-layout.component';
 import { ListAssententComponent } from './pages/list-assentent/list-assentent.component';
+import { CreateAssententComponent } from './pages/create-assentent/create-assentent.component';
 
 const routes: Routes = [
 

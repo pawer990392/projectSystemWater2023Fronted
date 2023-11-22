@@ -34,6 +34,11 @@ const routes: Routes = [
     path:'servicio',
     component:PrivateComponent,
     loadChildren:() =>import('../modules/services/services.module').then(m=>m.ServicesModule)
+  },
+  {
+    path:'colonias',
+    component:PrivateComponent,
+    loadChildren:()=>import('../modules/assentent/assentent.module').then(m=>m.AssententModule)
   }
 ];
 

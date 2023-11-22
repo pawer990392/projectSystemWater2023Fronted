@@ -1,0 +1,7 @@
+.textTittle{
+    font-weight:600;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}

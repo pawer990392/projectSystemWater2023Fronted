@@ -12,7 +12,7 @@ const routes: Routes = [
   children:[
     //  rutas ecundarias como los compontes
     {
-      path:'dashboard',
+      path:'',
       component:GraphicsComponent
     }
   ]

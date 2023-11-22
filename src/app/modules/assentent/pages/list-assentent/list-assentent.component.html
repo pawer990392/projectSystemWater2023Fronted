@@ -1,1 +1,37 @@
-<p>list-assentent works!</p>
+<div class="w-100 h-100 d-flex flex-column">
+    <app-tittle-components  [title]='"Colonia"'></app-tittle-components>
+
+    <mat-spinner [diameter]="180" class="spinner-Style" *ngIf="loading"></mat-spinner>
+    <div *ngIf="!this.loading">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" cellspacing="0" matSort #empTbSort="matSort">
+            <!-- Position Column -->
+            <ng-container matColumnDef="id" >
+              <th mat-header-cell *matHeaderCellDef  class="pl-4 small-column"  mat-sort-header >Codigo</th>
+              <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+            </ng-container>
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef class="small-column" mat-sort-header [disableClear]="true">Nombre</th>
+              <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+            </ng-container>
+            <ng-container matColumnDef="createDate">
+              <th mat-header-cell class="small-column" *matHeaderCellDef >Fecha Creada</th>
+              <td mat-cell *matCellDef="let row">{{ row.createDate | date}}</td>
+            </ng-container>
+            <ng-container matColumnDef="actions">
+                <th mat-header-cell class="small-column" *matHeaderCellDef>Acciones</th>
+                <td class="accion-style" mat-cell *matCellDef="let row">
+                  <button mat-icon-button >
+                    <mat-icon style="color: bg-dark;">edit</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+          
+            <!-- Solo debe haber una fila predeterminada sin un predicado when -->
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </div>
+      
+
+
+</div>
